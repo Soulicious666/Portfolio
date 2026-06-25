@@ -61,18 +61,18 @@
       "cover": {
         "type": "image",
         "src": "/media/Droptable/SimpleDroptable.png",
-        "alt": "Neon Drift cover"
+        "alt": "Simple Droptable cover"
       },
       "gallery": [
         {
           "type": "image",
           "src": "/media/Droptable/SimpleDroptable.png",
-          "alt": "Gameplay screenshot"
+          "alt": "Simple Droptable"
         },
         {
           "type": "video",
           "src": "/media/Droptable/droptable.mp4",
-          "alt": "Trailer"
+          "alt": "how to use"
         }
       ]
     }
