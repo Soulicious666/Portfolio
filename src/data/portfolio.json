@@ -1,0 +1,81 @@
+{
+  "profile": {
+    "name": "Tom Verheirstraeten",
+    "role": "Game Developer",
+    "tagline": "I build games that feel good to play — gameplay programming, tools, and the occasional pixel.",
+    "location": "Brussels, Belgium",
+    "avatar": "",
+    "email": "tom.verheirstraeten96@live.be",
+    "resumeUrl": "",
+    "social": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/yourname"
+      },
+      {
+        "label": "itch.io",
+        "url": "https://yourname.itch.io"
+      },
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/yourname"
+      }
+    ]
+  },
+  "skills": [
+    "Unity / C#",
+    "Godot / C# & GDScript",
+    "Gameplay systems",
+    "Blender",
+    "Shaders (HLSL)",
+    "Tools & editor scripting",
+    "Multiplayer / netcode",
+    ".NET MAUI",
+    "React",
+    "Vite"
+  ],
+  "projects": [
+    {
+      "id": "simpleDropTable",
+      "title": "Simple Droptable",
+      "year": "2026",
+      "role": "Solo",
+      "accent": "yellow",
+      "tags": [
+        "Unity",
+        "Utility",
+        "Package"
+      ],
+      "summary": "Unity package used to create simple drop tables.",
+      "description": "A Unity package used to create and manage drop tables. Create one or more droptables and define tiers with multiple item groeps atatched to each tier. This can be used to make droptables for each specific boss or for each specific mob, chest, dungeon corpse...",
+      "highlights": [
+        "Drop tables","Item groups creation and management"
+      ],
+      "links": [
+        
+      ],
+      "cta": {
+        "text": "Asset store",
+        "url": "https://yourname.itch.io/neon-drift"
+      },
+      "cover": {
+        "type": "image",
+        "src": "/media/Droptable/SimpleDroptable.png",
+        "alt": "Neon Drift cover"
+      },
+      "gallery": [
+        {
+          "type": "image",
+          "src": "/media/Droptable/SimpleDroptable.png",
+          "alt": "Gameplay screenshot"
+        },
+        {
+          "type": "video",
+          "src": "/media/Droptable/droptable.mp4",
+          "alt": "Trailer"
+        }
+      ]
+    }
+    
+  ]
+}
