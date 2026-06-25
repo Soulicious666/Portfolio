@@ -3,6 +3,14 @@ import data from "./data/portfolio.json";
 
 const ACCENTS = { pink: "accent-pink", gold: "accent-gold", mint: "accent-mint", blue: "accent-blue" };
 
+// Prefix local media paths with Vite's base ("/Portfolio/" in production, "/" in dev)
+// so they resolve on GitHub Pages. Full URLs (YouTube, etc.) are returned untouched.
+const asset = (p) => {
+  if (!p) return p;
+  if (/^https?:\/\//.test(p)) return p;
+  return import.meta.env.BASE_URL.replace(/\/$/, "") + "/" + p.replace(/^\//, "");
+};
+
 function Media({ item }) {
   if (!item) return null;
   if (item.type === "youtube") {
@@ -20,13 +28,13 @@ function Media({ item }) {
   if (item.type === "video") {
     return (
       <div className="media-frame">
-        <video src={item.src} controls preload="metadata" />
+        <video src={asset(item.src)} controls preload="metadata" />
       </div>
     );
   }
   return (
     <div className="media-frame">
-      <img src={item.src} alt={item.alt || ""} loading="lazy" />
+      <img src={asset(item.src)} alt={item.alt || ""} loading="lazy" />
     </div>
   );
 }
@@ -94,7 +102,7 @@ function Card({ project, onOpen }) {
   return (
     <button className={`cart ${ACCENTS[project.accent] || "accent-pink"}`} onClick={onOpen}>
       <div className="cart__media">
-        {project.cover && <img src={project.cover.src} alt={project.cover.alt || project.title} loading="lazy" />}
+        {project.cover && <img src={asset(project.cover.src)} alt={project.cover.alt || project.title} loading="lazy" />}
       </div>
       <div className="cart__body">
         <div className="cart__year">{project.year}</div>
